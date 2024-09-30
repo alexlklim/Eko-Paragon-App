@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EkoParagonApp</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="see_all_receipts"><u>zobacz wszystkie</u></string>
+    <string name="do_not_remember_password"><u>Nie pamiętam hasła</u></string>
+    <string name="login_without_register"><u>Wejśź bez rejestracji</u></string>
+    <string name="login"><u>Zaloguję się</u></string>
+    <string name="register"><u>Utwóż nowe konto</u></string>
+</resources>

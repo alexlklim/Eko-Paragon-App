@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fon"
+    tools:context=".activities.RegisterActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextMainStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Utwóz konto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.144">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextStyleUsualBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"/>
+
+        <EditText
+            android:id="@+id/editTextText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wpisz e-mail" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextStyleUsualBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasło" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wpisz hasło" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/CheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Zapamiętaj hasło" />
+            <CheckBox
+                android:id="@+id/checkBox2"
+                style="@style/CheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akceptacjia regulaminu i RODO" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/TextStyleUsualBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kod potwierdzenia"/>
+
+        <EditText
+            android:id="@+id/editTextText3"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="wpisz kod" />
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Utwóz konto" />
+
+        <TextView
+            android:id="@+id/textView43"
+            style="@style/TextStyleUsualGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masz już konto?"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/LinkStyleNoPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
